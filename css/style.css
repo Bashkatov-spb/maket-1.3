@@ -15,7 +15,7 @@ body {
 /* Header */
 
 .header {
-    background-color: ;
+
 }
 
 .header__inner {
@@ -59,26 +59,9 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    min-height: 600px;
     padding-top: 30px;
     border-top: 1px solid #D9FFF5;
     background-color: #F8F8F8;
-}
-
-.container {
-    flex: 1 0 10%;
-}
-
-.main__wrapper {
-    flex: 2 0 10%;
-}
-
-.main__article {
-    flex: 10 0 90%;
-}
-
-.main__header {
-    position: relative;
 }
 
 .main__title {
@@ -97,13 +80,19 @@ body {
     border-top-right-radius: 5px;
 }
 
-
+.main__wrapper {
+    margin: 0;
+    padding: 0;
+}
 
 .main__scroller {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
     white-space: nowrap;
+    background-color: rgba(128, 128, 128, 0.603);
+    padding-left: 25px;
+    margin-top: 30px;
 }
 .main__scroller::-webkit-scrollbar {
     width: 0;
@@ -114,6 +103,7 @@ body {
     border: none;
     background-color: transparent;
     color: #7E7E82;
+    font-size: 20px;
 }
 
 .menu__link:focus {
@@ -125,11 +115,45 @@ body {
     border-radius: 6px;
 }
 
-.menu__link:active {
-    padding: 10px;
-    color: #7E7E82;
-    text-decoration: none;
-    background-color: #fff;
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
+.main__article {
+    padding: 20px;
+    background-color: gray;
 }
+
+.main__next {
+    margin: 20px 0 0 30px;
+    position: relative;
+}
+
+.main__next:hover {
+    cursor: pointer;
+    outline: 2px solid #41F6D7;
+}
+
+.main__next::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-top: 2px solid #41F6D7;
+    border-right: 2px solid #41F6D7;
+    margin-right: 60px;
+    transform: rotate(135deg);
+    left: -25px;
+    top: 0;
+}
+.main__next::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-top: 2px solid #41F6D7;
+    border-right: 2px solid #41F6D7;
+    margin-right: 60px;
+    transform: rotate(135deg);
+    left: -25px;
+    top: 9px;
+}
+
