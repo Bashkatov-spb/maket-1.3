@@ -13,6 +13,7 @@ body {
 }
 
 a {
+    -moz-text-decoration-style: none;
     text-decoration: none;
     color: inherit;
 }
