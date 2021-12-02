@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Demi';
+    src: url('../fonts/TTLakes-DemiBold.eot');
+    src: url('../fonts/TTLakes-DemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-DemiBold.woff') format('woff'),
+    url('../fonts/TTLakes-DemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes ExtraBold';
+    src: url('../fonts/TTLakes-ExtraBold.eot');
+    src: url('../fonts/TTLakes-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-ExtraBold.woff') format('woff'),
+    url('../fonts/TTLakes-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

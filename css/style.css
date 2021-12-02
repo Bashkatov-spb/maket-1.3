@@ -1,3 +1,4 @@
+
 html {
     box-sizing: border-box;
 }
@@ -13,7 +14,6 @@ body {
 }
 
 a {
-    -moz-text-decoration-style: none;
     text-decoration: none;
     color: inherit;
 }
@@ -33,6 +33,10 @@ a {
     position: relative;
 }
 
+.header__inner a {
+    display: block;
+}
+
 .header__container {
     padding: 0 20px;
 }
@@ -40,6 +44,23 @@ a {
 .header__logo {
     margin-left: 17px;
     position: relative;
+}
+
+.header__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header__button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+    transform: scale(1.05);
+}
+
+.header__button:active {
+    cursor: pointer;
+    transform: scale(0.97);
 }
 
 .header__new-buttons {
@@ -75,22 +96,6 @@ a {
     transform: translate(0, -50%);
 }
 
-.header__button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.header__button:hover {
-    cursor: pointer;
-    opacity: 0.75;
-    transform: scale(1.05);
-}
-
-.header__button:active {
-    cursor: pointer;
-    transform: scale(0.97);
-}
 
 /* Main */
 
@@ -113,6 +118,8 @@ a {
 }
 
 .main__title {
+    font-family: 'TT Lakes Bold';
+    font-size: 26px;
     margin: 0;
     margin-left: 20px;
 }
@@ -157,11 +164,12 @@ a {
 } 
 
 .menu__link {
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
     padding: 10px 20px;
     border: 2px solid #F8F8F8;;
     background-color: #F8F8F8;
     color: #7E7E82;
-    font-size: 20px;
 }
 .menu__link:first-child {
     margin-left: 20px;
@@ -188,58 +196,40 @@ a {
 }
 
 .main__article {
-    max-width: 600px;
-    padding: 0 20px;
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    padding: 0 20px 20px;
 }
 
-.main__text {
-
+.main__article-wrapper {
+    width: auto;
+    height: 90px;
+    overflow: hidden;
 }
 
-.main__text-part1 {
-    display: none;
-}
-.main__text-part2 {
-    display: none;
+.main__article-text {
+    margin: 0;
 }
 
-.main__readMore-wrapper {
+.main__spoiler-wrapper {
     align-self: start;
     margin: 30px;
     position: relative;
 }
 
-.main__readMore-wrapper:hover {
+.main__spoiler-wrapper:hover {
     cursor: pointer;
 }
 
-.main__readMore-wrapper::before {
-    content: "";
+.main__spoiler {
+    font-family: 'TT Lakes Demi';
+    margin: 20px 30px 0px 30px;
     display: block;
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    border-top: 2px solid #41F6D7;
-    border-right: 2px solid #41F6D7;
-    border-radius: 1px;
-    margin-right: 60px;
-    transform: rotate(135deg);
-    left: -25px;
-    top: 0;
+    position: relative;
 }
-.main__readMore-wrapper::after {
-    content: "";
-    display: block;
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    border-top: 2px solid #41F6D7;
-    border-right: 2px solid #41F6D7;
-    border-radius: 1px;
-    margin-right: 60px;
-    transform: rotate(135deg);
-    left: -25px;
-    top: 8px;
+
+.main__spoiler:hover {
+    cursor: pointer;
 }
 
 .main__read-more {
@@ -250,13 +240,49 @@ a {
     clip: rect(0 0 0 0);
 }
 
-.main__read-more:checked .main__text-part1,
-.main__read-more:checked .main__text-part2 {
-    display: flex;
+.main__spoiler::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-top: 2px solid #41F6D7;
+    border-right: 2px solid #41F6D7;
+    border-radius: 1px;
+    margin-right: 60px;
+    transform: rotate(135deg);
+    left: -20px;
+    top: 0;
+}
+.main__spoiler::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-top: 2px solid #41F6D7;
+    border-right: 2px solid #41F6D7;
+    border-radius: 1px;
+    margin-right: 60px;
+    transform: rotate(135deg);
+    left: -20px;
+    top: 7px;
 }
 
-.main__background-wrapper {
+.main__read-more:checked + .main__article-wrapper {
+    overflow: visible;
+    height: auto;
+}
 
+.main__read-more:checked ~ .main__spoiler::after {
+    transform: rotate(-45deg);
+    left: -20px;
+    top: 4px;
+}
+.main__read-more:checked ~ .main__spoiler::before {
+    transform: rotate(-45deg);
+    left: -20px;
+    top: 11px;
 }
 
 .main__background-company {
@@ -283,6 +309,9 @@ a {
     .header__button-message {
         display: flex;
     }
+    .main__article-wrapper {
+        height: 70px;
+    }
 }
 @media (min-width: 500px) {
     .header__button-call {
@@ -308,6 +337,13 @@ a {
     .main__content {
         flex-wrap: nowrap;
     }
+    .main__article {
+        padding-top: 20px;
+    }
+
+    .main__article-wrapper {
+        height: 130px;
+    }
     .main__background-company {
         border-radius: 5px;
     }
@@ -316,7 +352,11 @@ a {
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+    .main__article-wrapper {
+        height: 130px;
+    }
+    
     .main__background-wrapper {
         padding: 15px;
     }
@@ -342,6 +382,10 @@ a {
 @media (min-width: 1119px) {
     .header {
         display: none;
+    }
+    .main__content {
+        margin: 0 30px;
+        justify-content: space-between;
     }
     .main__background-company {
         width: 530px;
