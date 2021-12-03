@@ -372,7 +372,7 @@ a {
     }
 }
 
-@media screen (min-width: 1200px) and (orientation: landscape) {
+/* @media (min-width: 1200px) and (orientation: landscape) {
     .menu__link:first-child {
         margin-left: 0;
     }
@@ -380,7 +380,7 @@ a {
         flex-wrap: wrap;
         margin-left: 20px;
     }
-}
+} */
 
 @media (min-width: 1119px) {
     .header {
@@ -400,6 +400,9 @@ a {
     .main__title-repair,
     .main__title-checkstatus {
         display: flex;
+    }
+    .main__menu-wrapper {
+        padding-top: 10px;
     }
     .main__scroller {
         flex-wrap: wrap;
