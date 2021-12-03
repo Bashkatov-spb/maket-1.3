@@ -345,13 +345,12 @@ a {
     }
 
     .main__article-wrapper {
-        height: 130px;
+        height: 130px;   
     }
-    .main__background-company {
-        border-radius: 5px;
-    }
+
     .main__background-wrapper {
         padding-top: 15px;
+        padding-right: 15px;
     }
 }
 
