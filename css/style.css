@@ -46,19 +46,19 @@ a {
     position: relative;
 }
 
-.header__button {
+.button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.header__button:hover {
+.button:hover {
     cursor: pointer;
     opacity: 0.75;
     transform: scale(1.05);
 }
 
-.header__button:active {
+.button:active {
     cursor: pointer;
     transform: scale(0.97);
 }
@@ -142,8 +142,10 @@ a {
 }
 
 .main__title-text {
+    font-family: 'TT Lakes Demi';
+    font-size: 16px;
     align-self: center;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .main__menu-wrapper {
@@ -223,6 +225,7 @@ a {
 
 .main__spoiler {
     font-family: 'TT Lakes Demi';
+    font-size: 16px;
     margin: 20px 30px 0px 30px;
     display: block;
     position: relative;
