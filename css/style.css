@@ -25,20 +25,24 @@ a {
 
 /* Header */
 
-/* .header__inner {
-    min-height: 88px;
+.header__inner {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-} */
+}
 
 .header__inner a {
     display: block;
 }
 
 .header__container {
-    padding: 0 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 .header__logo {
@@ -47,9 +51,11 @@ a {
 }
 
 .button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    padding: 0;
+    border: none;
+    color: inherit;
+    font: inherit;
+    background-color: transparent;
 }
 
 .button:hover {
