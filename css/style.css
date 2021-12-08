@@ -26,7 +26,7 @@ a {
 /* Header */
 
 .header__inner {
-
+    min-height: 88px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,11 +38,7 @@ a {
 }
 
 .header__container {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    padding: 0 20px;
 }
 
 .header__logo {
@@ -51,11 +47,9 @@ a {
 }
 
 .button {
-    padding: 0;
-    border: none;
-    color: inherit;
-    font: inherit;
-    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .button:hover {
@@ -161,9 +155,6 @@ a {
 }
 
 .main__scroller {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
