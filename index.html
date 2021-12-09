@@ -9,79 +9,82 @@
     <title>Maket 1.3</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header__container">
-                
-                    <button type="button" class="button header__button-burger">
-                        <a href="./"><img src="svg/burger.svg" alt="Меню бургер"></a>
+    <header class="header">
+        <div class="header__container">
+                <button type="button" class="button header__button-burger">
+                    <img src="svg/burger.svg" alt="Меню бургер">
+                </button>
+                <div class="stick__left">
+                    <img src="svg/stick.svg" alt="">
+                </div>
+                <div class="header__logo">
+                    <a href="./"><img src="svg/logo.svg" alt="Логотип"></a>
+                </div>
+                <div class="header__new-buttons">
+                    <button type="button" class="button header__button-call">
+                        <img src="svg/call.svg" alt="Звонок">
                     </button>
-                    <div class="header__stick">
-                        <img src="svg/stick.svg" alt="">
-                    </div>
-                    <div class="header__logo">
-                        <a href="./"><img src="svg/logo.svg" alt="Логотип"></a>
-                    </div>
-                    <div class="header__new-buttons">
-                        <button type="button" class="button header__button-call">
-                            <a href="./"><img src="svg/call.svg" alt="Звонок"></a>
-                        </button>
-                        <button type="button" class="button header__button-message">
-                            <a href="./"><img src="svg/message.svg" alt="Чат"></a>
-                        </button>
-                        <button type="button" class="button header__button-contact">
-                            <a href="./"><img src="svg/contact.svg" alt="Контакты"></a>
-                        </button>
-                    </div>
-                    <button type="button" class="button header__button-repair">
-                        <a href="./"><img src="svg/repair.svg" alt="Ремонт"></a>
+                    <button type="button" class="button header__button-message">
+                        <img src="svg/message.svg" alt="Чат">
                     </button>
-                    <button type="button" class="button header__button-checkstatus">
-                        <a href="./"><img src="svg/checkstatus.svg" alt="Проверка статуса"></a>
+                    <button type="button" class="button header__button-contact">
+                        <img src="svg/contact.svg" alt="Контакты">
                     </button>
-                
-            </div>
-        </header>
-        <main class="main">
-            <div class="main__title-container">
-                <h2 class="main__title">Услуги и сервисы</h2>
-                <div class="main__title-icons">
-                    <div class="main__title-repair">
-                        <span class="main__title-text">Оставить заявку</span>
-                        <a href="./"><img class="button" src="svg/repair.svg" alt="Оставить заявку"></a>
-                    </div>
-                    <div class="main__title-checkstatus">
-                        <span class="main__title-text">Статус ремонта</span>
-                        <a href="./"><img class="button" src="svg/checkstatus.svg" alt="Проверка статуса"></a>
-                    </div>
+                </div>
+                <div class="stick__right">
+                    <img src="svg/stick.svg" alt="">
+                </div>
+                <button type="button" class="button header__button-repair">
+                    <img src="svg/repair.svg" alt="Ремонт">
+                </button>
+                <button type="button" class="button header__button-checkstatus">
+                    <img src="svg/checkstatus.svg" alt="Проверка статуса">
+                </button>
+        </div>
+    </header>
+    <main class="main container">
+        <div class="main__title-container">
+            <h2 class="main__title">Услуги и сервисы</h2>
+            <div class="main__title-icons">
+                <div class="main__title-repair">
+                    <span class="main__title-text">Оставить заявку</span>
+                    <button type="button" class="button">
+                        <img src="svg/repair.svg" alt="Оставить заявку">
+                    </button>
+                </div>
+                <div class="main__title-checkstatus">
+                    <span class="main__title-text">Статус ремонта</span>
+                    <button type="button" class="button">
+                        <img src="svg/checkstatus.svg" alt="Проверка статуса">
+                    </button>
                 </div>
             </div>
-            <nav class="main__menu-wrapper">
-                <ul class="main__scroller">
-                    <li class="menu__link"><a href="./"><span>Ремонтируемые устройства</span></a></li>
-                    <li class="menu__link"><a href="./"><span>Дополнительные услуги</span></a></li>
-                    <li class="menu__link"><a href="./"><span>Цены на услуги</span></a></li>
-                    <li class="menu__link"><a href="./"><span>Адреса сервисных центров</span></a></li>
-                    <li class="menu__link"><a href="./"><span>Специальные цены</span></a></li>
-                    <li class="menu__link"><a href="./"><span>Отзывы</span></a></li>
-                </ul>
-            </nav>
-            <div class="main__content">
-                <div class="main__article">
-                    <input type="checkbox" class="main__read-more" id="read-more"> 
-                    <div class="main__article-wrapper">
-                        <p class="main__article-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                    </div>
-                    <label class="main__spoiler" for="read-more">
-                        Читать далее
-                    </label>
-                </div> 
-                <div class="main__background-wrapper">
-                    <div class="main__background-company"></div>
+        </div>
+        <nav class="main__menu-wrapper">
+            <ul class="main__scroller">
+                <li class="menu__link"><a href="./"><span>Ремонтируемые устройства</span></a></li>
+                <li class="menu__link"><a href="./"><span>Дополнительные услуги</span></a></li>
+                <li class="menu__link"><a href="./"><span>Цены на услуги</span></a></li>
+                <li class="menu__link"><a href="./"><span>Адреса сервисных центров</span></a></li>
+                <li class="menu__link"><a href="./"><span>Специальные цены</span></a></li>
+                <li class="menu__link"><a href="./"><span>Отзывы</span></a></li>
+            </ul>
+        </nav>
+        <div class="main__content">
+            <div class="main__article">
+                <input type="checkbox" class="main__read-more" id="read-more"> 
+                <div class="main__article-wrapper">
+                    <p class="main__article-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 </div>
+                <label class="main__spoiler" for="read-more">
+                    <button class="main__spoiler-btn" type="button">Читать далее</button>
+                </label>
+            </div> 
+            <div class="main__background-wrapper">
+                <img class="main__background-company" src="img/company.png" alt="Логотип компании">
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
 </body>
 </html>
