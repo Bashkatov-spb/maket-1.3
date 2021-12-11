@@ -97,17 +97,23 @@
     font-family: 'TT Lakes Bold';
 }
 
-.menu__lang {
+.menu__language {
     display: flex;
     margin-top: 40px;
 }
 
-.menu__lang-ru {
+.menu__lang {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    font: inherit;
     margin-right: 7px;
 }
 
-.menu__lang-en {
-    margin-right: 7px;
+.menu__lang:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: drop-shadow(1px 1px 1px black);
 }
 
 .lang-active {
