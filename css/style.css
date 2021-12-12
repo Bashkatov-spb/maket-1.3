@@ -216,14 +216,10 @@ a {
     margin: 0;
 }
 
-.main__spoiler-wrapper {
-    align-self: start;
-    margin: 30px;
+.main__spoiler {
+    margin: 20px 30px 0px 35px;
+    display: block;
     position: relative;
-}
-
-.main__spoiler-wrapper:hover {
-    cursor: pointer;
 }
 
 .main__spoiler-btn {
@@ -232,29 +228,11 @@ a {
     padding: 0;
     background-color: inherit;
     font: inherit;
-}
-
-.main__spoiler {
     font-family: 'TT Lakes Demi';
     font-size: 16px;
-    margin: 20px 30px 0px 35px;
-    display: block;
-    position: relative;
 }
 
-.main__spoiler:hover {
-    cursor: pointer;
-}
-
-.main__read-more {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    clip: rect(0 0 0 0);
-}
-
-.main__spoiler::before {
+.main__spoiler-btn::before {
     content: "";
     display: block;
     width: 7px;
@@ -268,7 +246,7 @@ a {
     left: -25px;
     top: 3px;
 }
-.main__spoiler::after {
+.main__spoiler-btn::after {
     content: "";
     display: block;
     width: 7px;
@@ -281,22 +259,6 @@ a {
     transform: rotate(135deg);
     left: -25px;
     top: 10px;
-}
-
-.main__read-more:checked + .main__article-wrapper {
-    overflow: visible;
-    height: auto;
-}
-
-.main__read-more:checked ~ .main__spoiler::after {
-    transform: rotate(-45deg);
-    left: -20px;
-    top: 4px;
-}
-.main__read-more:checked ~ .main__spoiler::before {
-    transform: rotate(-45deg);
-    left: -20px;
-    top: 11px;
 }
 
 .main__background-company {
