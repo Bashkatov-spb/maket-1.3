@@ -11,63 +11,63 @@
 <body>
     <header class="header">
         <div class="header__container">
+            <button id="button"" type="button" class="button">
+                <img src="svg/burger.svg" alt="Меню бургер">
+            </button>
+            <div class="stick__left">
+                <img src="svg/stick.svg" alt="">
+            </div>
+            <div class="header__logo">
+                <a href="./"><img src="svg/logo.svg" alt="Логотип"></a>
+            </div>
+            <div class="header__new-buttons">
                 <button type="button" class="button">
-                    <img src="svg/burger.svg" alt="Меню бургер">
-                </button>
-                <div class="stick__left">
-                    <img src="svg/stick.svg" alt="">
-                </div>
-                <div class="header__logo">
-                    <a href="menu.html"><img src="svg/logo.svg" alt="Логотип"></a>
-                </div>
-                <div class="header__new-buttons">
-                    <button type="button" class="button header__button-call">
-                        <img src="svg/call.svg" alt="Звонок">
-                    </button>
-                    <button type="button" class="button header__button-message">
-                        <img src="svg/message.svg" alt="Чат">
-                    </button>
-                    <button type="button" class="button header__button-contact">
-                        <img src="svg/contact.svg" alt="Контакты">
-                    </button>
-                </div>
-                <div class="stick__right">
-                    <img src="svg/stick.svg" alt="">
-                </div>
-                <button type="button" class="button header__button-repair">
-                    <img src="svg/repair.svg" alt="Ремонт">
+                    <img src="svg/call.svg" alt="Звонок">
                 </button>
                 <button type="button" class="button">
-                    <img src="svg/checkstatus.svg" alt="Проверка статуса">
+                    <img src="svg/message.svg" alt="Чат">
                 </button>
+                <button type="button" class="button">
+                    <img src="svg/contact.svg" alt="Контакты">
+                </button>
+            </div>
+            <div class="stick__right">
+                <img src="svg/stick.svg" alt="">
+            </div>
+            <button type="button" class="button header__button-repair">
+                <img src="svg/repair.svg" alt="Ремонт">
+            </button>
+            <button type="button" class="button">
+                <img src="svg/checkstatus.svg" alt="Проверка статуса">
+            </button>
         </div>
     </header>
     <main class="main container">
         <div class="main__title-container">
-            <h2 class="main__title">Услуги и сервисы</h2>
+            <h1 class="main__title">Услуги и сервисы</h1>
             <div class="main__title-icons">
                 <div class="main__title-repair">
-                    <span class="main__title-text">Оставить заявку</span>
                     <button type="button" class="button">
+                        <span class="main__title-text">Оставить заявку</span>
                         <img src="svg/repair.svg" alt="Оставить заявку">
                     </button>
                 </div>
                 <div class="main__title-checkstatus">
-                    <span class="main__title-text">Статус ремонта</span>
                     <button type="button" class="button">
+                        <span class="main__title-text">Статус ремонта</span>
                         <img src="svg/checkstatus.svg" alt="Проверка статуса">
                     </button>
                 </div>
             </div>
         </div>
-        <nav class="main__menu-wrapper">
-            <ul class="main__scroller">
-                <li class="menu__link"><a href="./"><span>Ремонтируемые устройства</span></a></li>
-                <li class="menu__link"><a href="./"><span>Дополнительные услуги</span></a></li>
-                <li class="menu__link"><a href="./"><span>Цены на услуги</span></a></li>
-                <li class="menu__link"><a href="./"><span>Адреса сервисных центров</span></a></li>
-                <li class="menu__link"><a href="./"><span>Специальные цены</span></a></li>
-                <li class="menu__link"><a href="./"><span>Отзывы</span></a></li>
+        <nav class="main__nav">
+            <ul class="main__list">
+                <li class="main__link"><a href="./"><span>Ремонтируемые устройства</span></a></li>
+                <li class="main__link"><a href="./"><span>Дополнительные услуги</span></a></li>
+                <li class="main__link"><a href="./"><span>Цены на услуги</span></a></li>
+                <li class="main__link"><a href="./"><span>Адреса сервисных центров</span></a></li>
+                <li class="main__link"><a href="./"><span>Специальные цены</span></a></li>
+                <li class="main__link"><a href="./"><span>Отзывы</span></a></li>
             </ul>
         </nav>
         <div class="main__content">
@@ -85,5 +85,53 @@
             </div>
         </div>
     </main>
+    <aside class="menu">
+        <div class="menu__header">
+            <div class="menu__buttons-header">
+                <button type="button" class="button menu__header--open">
+                    <img src="svg/burger-open.svg" alt="">
+                </button>
+                <div class="menu__logo">
+                    <a href="./"><img src="svg/logo.svg" alt="Логотип"></a>
+                </div>
+                <button type="button" class="button menu__header-search">
+                    <img src="svg/search.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <nav class="menu__nav">
+            <ul class="menu__burger">
+                <li><a class="menu__item active" href="./">Ремонт техники</a></li>
+                <li><a class="menu__item" href="./">Услуги и сервисы</a></li>
+                <li><a class="menu__item" href="./">Корпоративным клиентам</a></li>
+                <li><a class="menu__item" href="./">Продавцам техники</a></li>
+                <li><a class="menu__item" href="./">Партнерам</a></li>
+                <li><a class="menu__item" href="./">Производителям</a></li>
+                <li><a class="menu__item" href="./">Наши сервисные центры</a></li>
+                <li><a class="menu__item" href="./">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="menu__footer">
+            <div class="menu__buttons-footer">
+                <button type="button" class="button menu__button-call">
+                    <img src="svg/call.svg" alt="Звонок">
+                </button>
+                <button type="button" class="button menu__button-message">
+                    <img src="svg/message.svg" alt="Чат">
+                </button>
+                <button type="button" class="button menu__button-contact">
+                    <img src="svg/contact.svg" alt="Контакты">
+                </button>
+            </div>
+            <a href="mailto:mail@cps.com" class="menu__mail">mail@cps.com</a>
+            <a href="tel:+88008908900" class="menu__phone">8 800 890 8900</a>
+            <div class="menu__language">
+                <button type="button" class="menu__link menu__link--active">RU</button>
+                <button type="button" class="menu__link">EN</button>
+                <button type="button" class="menu__link">CH</button>
+            </div>
+        </div>
+    </aside>
+    <script src="script/script.js"></script>
 </body>
 </html>
