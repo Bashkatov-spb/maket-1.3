@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/brands.css">
     <title>Maket 1.3</title>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <button id="button"" type="button" class="button">
+            <button id="button"" type="button" class="button button--rotate">
                 <img src="svg/burger.svg" alt="Меню бургер">
             </button>
             <div class="stick__left">
@@ -21,23 +22,23 @@
                 <a href="./"><img src="svg/logo.svg" alt="Логотип"></a>
             </div>
             <div class="header__new-buttons">
-                <button type="button" class="button">
+                <button type="button" class="button button--vibration">
                     <img src="svg/call.svg" alt="Звонок">
                 </button>
-                <button type="button" class="button">
+                <button type="button" class="button button--scale">
                     <img src="svg/message.svg" alt="Чат">
                 </button>
-                <button type="button" class="button">
+                <button type="button" class="button button--scale">
                     <img src="svg/contact.svg" alt="Контакты">
                 </button>
             </div>
             <div class="stick__right">
                 <img src="svg/stick.svg" alt="">
             </div>
-            <button type="button" class="button header__button-repair">
+            <button type="button" class="button header__button-repair button--scale">
                 <img src="svg/repair.svg" alt="Ремонт">
             </button>
-            <button type="button" class="button">
+            <button type="button" class="button button--scale">
                 <img src="svg/checkstatus.svg" alt="Проверка статуса">
             </button>
         </div>
@@ -49,13 +50,13 @@
                 <div class="main__title-repair">
                     <button type="button" class="button">
                         <span class="main__title-text">Оставить заявку</span>
-                        <img src="svg/repair.svg" alt="Оставить заявку">
+                        <img class="button--rotate" src="svg/repair.svg" alt="Оставить заявку">
                     </button>
                 </div>
                 <div class="main__title-checkstatus">
                     <button type="button" class="button">
                         <span class="main__title-text">Статус ремонта</span>
-                        <img src="svg/checkstatus.svg" alt="Проверка статуса">
+                        <img class="button--rotate" src="svg/checkstatus.svg" alt="Проверка статуса">
                     </button>
                 </div>
             </div>
@@ -76,25 +77,102 @@
                     <p class="main__article-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                     <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 </div>
-                <div class="main__spoiler" for="read-more">
-                    <button class="main__spoiler-btn" type="button">Читать далее</button>
-                </div>
+                <button class="main__spoiler-btn" type="button">
+                    <img class="main__spoiler-arrow" src="svg/icon.svg" alt="Читать далее">
+                    <span>Читать далее</span>
+                </button>
             </div> 
             <div class="main__background-wrapper">
                 <img class="main__background-company" src="img/company.png" alt="Логотип компании">
             </div>
         </div>
     </main>
+    <div class="brands">
+        <div class="brands__container">
+            <div class="brands__title">Ремонт техники различных брендов</div>
+            <ul class="brands__icons brands__icons--wrapper">
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+                <li class="brand__icon">
+                    <a href="" class="brand__link">
+                        <img src="img/Lenovo.png" alt="">
+                        <img src="svg/brand-arrow.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="brands__points">
+                <img class="brands__point" src="svg/Oval__dark.svg" alt="">
+                <img class="brands__point" src="svg/Oval__light.svg" alt="">
+                <img class="brands__point" src="svg/Oval__light.svg" alt="">
+                <img class="brands__point" src="svg/Oval__light.svg" alt="">
+                <img class="brands__point" src="svg/Oval__light.svg" alt="">
+                <img class="brands__point" src="svg/Oval__light.svg" alt="">
+                <img class="brands__point" src="svg/Oval__light.svg" alt="">
+                <img class="brands__point" src="svg/Oval__light.svg" alt="">
+                <img class="brands__point" src="svg/Oval__light.svg" alt="">
+            </div>
+            <button class="brands__spoiler-btn" type="button">
+                <img class="brands__spoiler-arrow" src="svg/icon.svg" alt="Читать далее">
+                <span>Показать все</span>
+            </button>
+        </div>
+    </div>
     <aside class="menu">
         <div class="menu__header">
             <div class="menu__buttons-header">
-                <button type="button" class="button menu__header--open">
+                <button type="button" class="button button--rotate menu__header--open">
                     <img src="svg/burger-open.svg" alt="">
                 </button>
                 <div class="menu__logo">
                     <a href="./"><img src="svg/logo.svg" alt="Логотип"></a>
                 </div>
-                <button type="button" class="button menu__header-search">
+                <button type="button" class="button button--scale menu__header-search">
                     <img src="svg/search.svg" alt="">
                 </button>
             </div>
@@ -113,13 +191,13 @@
         </nav>
         <div class="menu__footer">
             <div class="menu__buttons-footer">
-                <button type="button" class="button menu__button-call">
+                <button type="button" class="button button--vibration">
                     <img src="svg/call.svg" alt="Звонок">
                 </button>
-                <button type="button" class="button menu__button-message">
+                <button type="button" class="button button--scale">
                     <img src="svg/message.svg" alt="Чат">
                 </button>
-                <button type="button" class="button menu__button-contact">
+                <button type="button" class="button button--scale">
                     <img src="svg/contact.svg" alt="Контакты">
                 </button>
             </div>
