@@ -137,7 +137,6 @@ p {
 .main {
     border-top: 1px solid #D9FFF5;
     background-color: #F8F8F8;
-    min-height: 509px;
 }
 
 .main__title-container {
@@ -407,62 +406,36 @@ p {
 /* Brands */
 
 .brands {
-    background-color: palevioletred;
-}
-
-.brands__container {
     background-color: rgb(248 248 248);
 }
 
 .brands__title {
+    border-top: 1px solid #D9FFF5;
     padding: 16px;
     font-family: 'TT Lakes Regular';
     text-transform: uppercase;
-    background-image: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-
+    background-image: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 
-.brands__icons {
+body > div > div.swiper.swiper-initialized.swiper-horizontal {
+    
+}
+
+
+.swiper-slide {
     display: flex;
-    overflow-x: scroll;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-} 
-
-.brands__icons::-webkit-scrollbar {
-    display: none;
-    width: 0;
-} 
- 
-.brand__icon {
-    min-width: 240px;
-    height: 72px;
-    padding: 16px;
-    background-color: white;
-    border: 1px solid #EAEAEA;
-    border-radius: 6px;
-    margin: 16px 0px 16px 16px;
-}
-
-.brand__icon:last-child {
-    margin-right: 16px;
+    justify-content: center;
 }
 
 .brand__link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.brands__points {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 38px;
-}
-
-.brands__point {
-    margin-right: 12px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding: 0 16px;
+    height: 70px;
 }
 
 .brands__spoiler-btn {
@@ -477,7 +450,6 @@ p {
 .brands__spoiler-arrow {
     margin-right: 17px;
 }
-
 
 /* 325px */
 
@@ -578,6 +550,9 @@ p {
     .main__link:last-child {
         margin-right: 24px;
     }
+    .brands__title {
+        padding-left: 24px;
+    }
     .brands__icons--wrapper {
         overflow: hidden;
         height: 160px;
@@ -588,16 +563,10 @@ p {
         grid-template-columns: 1fr 1fr 1fr;
         grid-row-gap: 16px;
         grid-column-gap: 24px;
-        flex-wrap: wrap;
-        margin: 0 24px;
-        
+        margin: 24px;
     }
-    .brand__icon {
-        min-width: auto;
-        margin: 0;
-    }
-    .brand__icon:last-child {
-        margin: 0;
+    .brand__link {
+        width: auto;
     }
     .brands__points {
         display: none;
@@ -656,8 +625,17 @@ p {
     .brands__icons--wrapper {
 
     }
+
+    .brands__title {
+        padding-left: 32px;
+    }
     .brands__icons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 32px;
+        margin: 32px;
+    }
+    .brand__link {
+        width: auto;
     }
 
     .menu,
