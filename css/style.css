@@ -417,11 +417,6 @@ p {
     background-image: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 
-body > div > div.swiper.swiper-initialized.swiper-horizontal {
-    
-}
-
-
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -436,6 +431,8 @@ body > div > div.swiper.swiper-initialized.swiper-horizontal {
     border-radius: 6px;
     padding: 0 16px;
     height: 70px;
+    width: 204px;
+    margin-top: 16px;
 }
 
 .brands__spoiler-btn {

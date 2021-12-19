@@ -4,7 +4,7 @@ const btnMenuOpen = document.querySelector('.menu__header--open');
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -12,9 +12,10 @@ const swiper = new Swiper('.swiper', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
     }
-  }
+  },
+  spaceBetween: 16
 
 });
 
