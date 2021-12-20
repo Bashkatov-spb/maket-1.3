@@ -549,7 +549,7 @@ p {
 .pagination__dot:hover {
     cursor: pointer;
 }
-.pagination__dot.active {
+.pagination__dot.pagination__dot--active {
     background-color: #B5B6BC;
 }
 
